@@ -6,7 +6,7 @@ describe('Login', () => {
     const user = {
       name: 'William',
       instagram: '@williamad',
-      password: 'pwd123',
+      password: 'pwd123'
     }
 
     loginPage.go()
@@ -20,7 +20,7 @@ describe('Login', () => {
 
     const user = {
       instagram: '@williamad',
-      password: '123456',
+      password: '123456'
     }
 
     loginPage.go()
@@ -34,7 +34,7 @@ describe('Login', () => {
   it('não deve logar com instagram inexistente', () => {
     const user = {
       instagram: '@madwill',
-      password: '123456',
+      password: '123456'
     }
 
     loginPage.go()

@@ -8,6 +8,12 @@ class MapPage{
         .should('have.text', `Olá, ${name}`)
     }
 
+    createLink(){
+        cy.get('a[href="/foodtrucks/create"]')
+            .should('be.visible')
+            .click()
+    }
+
 
 }
 
